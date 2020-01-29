@@ -7,7 +7,7 @@ class MetronomeContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            rangeValue: 100,
+            rangeValue: null,
             sound: new Audio('audio/click.wav')
         };
         this.handleSelectedValue = this.handleSelectedValue.bind(this);
@@ -24,8 +24,15 @@ class MetronomeContainer extends Component {
     }
 
     handlePlay() {
-        setInterval(this.playClick, 1000);
+        const val = this.calculateBPM();
+        setInterval(this.playClick, val);
     }
+
+    calculateBPM() {
+        const bpm = 60000 / this.state.rangeValue;
+        return bpm;
+    }
+
 
     
 
