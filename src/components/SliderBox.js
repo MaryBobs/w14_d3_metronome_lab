@@ -5,7 +5,7 @@ import Slider from './Slider.js';
 const SliderBox = (props) =>  {
     return (
         <div>
-        <CounterBox />
+        <CounterBox displayValue={props.value}/>
         <Slider onValueSelected={props.onValueSelected}/>
         </div>
     )

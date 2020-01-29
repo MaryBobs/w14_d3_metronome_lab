@@ -23,7 +23,7 @@ class MetronomeContainer extends Component {
         return (
             <div>
             <TitleBox />
-            <SliderBox onValueSelected={this.handleSelectedValue}/>
+            <SliderBox value={this.state.rangeValue} onValueSelected={this.handleSelectedValue}/>
             <PlayButton />
             </div>
         )
