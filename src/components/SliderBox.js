@@ -6,7 +6,7 @@ const SliderBox = (props) =>  {
     return (
         <div>
         <CounterBox />
-        <Slider />
+        <Slider onValueSelected={props.onValueSelected}/>
         </div>
     )
 }
