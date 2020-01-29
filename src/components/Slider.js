@@ -2,7 +2,10 @@ import React from 'react';
 
 const Slider = (props) => {
     return (
-        <p>Slider</p>
+        <div className="Slider">
+            <input type="range" id="bpm" name="bpm"
+            min="40" max="218"></input>
+        </div>
     )
 }
 
