@@ -4,7 +4,11 @@ import MetronomeContainer from './containers/MetronomeContainer';
 
 function App() {
   return (
-    <MetronomeContainer />
+    <div className="App">
+      <MetronomeContainer />
+
+    </div>
+    
   );
 }
 
