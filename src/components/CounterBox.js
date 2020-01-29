@@ -2,7 +2,10 @@ import React from 'react';
 
 const CounterBox = (props) => {
     return(
-        <p>counter box</p>
+        <div className="counter">
+            <span>000</span>
+            <span>BPM</span>
+        </div>
     )
 }
 
